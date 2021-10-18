@@ -1,5 +1,5 @@
 {
-  "name": "@av/design-tokens",
+  "name": "av-design-tokens",
   "version": "1.0.0",
   "description": "Design Tokens",
   "main": "build/index.js",
