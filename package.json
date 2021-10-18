@@ -1,5 +1,5 @@
 {
-  "name": "style-dictionary-auto-rebuild-watcher",
+  "name": "@av/design-tokens",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
