@@ -1,4 +1,4 @@
-const theme = require('../tokens/tokens.json')  // replace with availity colors
+const theme = require('../build/js/tokens')  // replace with availity colors
 
 module.exports = {
   theme: {
