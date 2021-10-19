@@ -1,15 +1,15 @@
 {
   "name": "av-design-tokens",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Design Tokens",
-  "main": "dist/",
+  "main": "src/",
   "files": [
-    "dist",
+    "src",
     "properties"
   ],
   "scripts": {
     "build": "node ./build.js",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf src/build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tyler Mathes",
