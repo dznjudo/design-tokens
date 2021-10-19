@@ -4,20 +4,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          main: theme => theme(colors.blue[500]),
-          lighter: theme => theme(colors.blue[300]),
-          darker: theme => theme(colors.blue[700]),
-        },
-        secondary: {
-          main: theme => theme(colors.green[600]),
-          lighter: theme => theme(colors.green[400]),
-          darker: theme => theme(colors.green[800]),
-        },
-        error: theme => theme(colors.red[800]),
-        warning: theme => theme(colors.yellow[600]),
-        info: theme => theme(colors.blue[500]),
-        success: theme => theme(colors.green[600]),
+        // primary: {
+        //   main: theme => theme(colors.blue[500]),
+        //   lighter: theme => theme(colors.blue[300]),
+        //   darker: theme => theme(colors.blue[700]),
+        // },
+        // secondary: {
+        //   main: theme => theme(colors.green[600]),
+        //   lighter: theme => theme(colors.green[400]),
+        //   darker: theme => theme(colors.green[800]),
+        // },
+        // error: theme => theme(colors.red[800]),
+        // warning: theme => theme(colors.yellow[600]),
+        // info: theme => theme(colors.blue[500]),
+        // success: theme => theme(colors.green[600]),
         blue: {
           50:  theme.colors.blue[50].value,
           100: theme.colors.blue[100].value,
