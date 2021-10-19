@@ -4,7 +4,7 @@ const StyleDictionary = require('style-dictionary').extend({
   platforms: {
     scss: {
       transformGroup: 'scss',
-      buildPath: 'build/',
+      buildPath: 'dist/scss/',
       files: [{
         destination: 'variables.scss',
         format: 'scss/variables'
@@ -12,7 +12,7 @@ const StyleDictionary = require('style-dictionary').extend({
     },
     css: {
       transformGroup: 'css',
-      buildPath: 'build/',
+      buildPath: 'dist/css/',
       files: [{
         destination: 'variables.css',
         format: 'css/variables'
@@ -23,7 +23,7 @@ const StyleDictionary = require('style-dictionary').extend({
     },
     web: {
       transformGroup: 'js',
-      buildPath: 'build/',
+      buildPath: 'dist/json/',
       files: [{
         destination: 'tokens.json',
         format: 'json/nested'

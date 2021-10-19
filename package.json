@@ -1,20 +1,21 @@
 {
   "name": "av-design-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design Tokens",
-  "main": "build/index.js",
+  "main": "dist/",
   "files": [
-    "build",
+    "dist",
     "properties"
   ],
   "scripts": {
     "build": "node ./build.js",
-    "clean": "rm -rf build",
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tyler Mathes",
   "license": "Apache-2.0",
   "devDependencies": {
+    "rollup": "^2.58.0",
     "style-dictionary": "3.0.2"
   },
   "repository": {
