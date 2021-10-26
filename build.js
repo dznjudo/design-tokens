@@ -1,49 +1,56 @@
 const StyleDictionary = require('style-dictionary').extend({
-  
   source: ['src/tokens/**/*.json'],
   platforms: {
     scss: {
       transformGroup: 'scss',
-      buildPath: 'src/build/scss/',
-      files: [{
-        destination: 'variables.scss',
-        format: 'scss/variables'
-      }]
+      buildPath: 'dist/scss/',
+      files: [
+        {
+          destination: 'variables.scss',
+          format: 'scss/variables',
+        },
+      ],
     },
     css: {
       transformGroup: 'css',
-      buildPath: 'src/build/css/',
-      files: [{
-        destination: 'variables.css',
-        format: 'css/variables'
-      }],
+      buildPath: 'dist/css/',
+      files: [
+        {
+          destination: 'variables.css',
+          format: 'css/variables',
+        },
+      ],
       options: {
-        'outputReferences': true
-      }
+        outputReferences: true,
+      },
     },
     web: {
       transformGroup: 'js',
-      buildPath: 'src/build/json/',
-      files: [{
-        destination: 'tokens.json',
-        format: 'json/nested'
-      }],
+      buildPath: 'dist/json/',
+      files: [
+        {
+          destination: 'tokens.json',
+          format: 'json/nested',
+        },
+      ],
       options: {
-        showFileHeader: false
-      }
+        showFileHeader: false,
+      },
     },
     web: {
       transformGroup: 'js',
-      buildPath: 'src/build/js/',
-      files: [{
-        destination: 'tokens.js',
-        format: 'javascript/module'
-      }],
+      buildPath: 'dist/js/',
+      files: [
+        {
+          destination: 'tokens.js',
+          format: 'javascript/module',
+        },
+      ],
       options: {
-        showFileHeader: false
-      }
-    }
-  }
-});
+        showFileHeader: false,
+      },
+    },
+  },
+})
 
-StyleDictionary.buildAllPlatforms();
+StyleDictionary.buildAllPlatforms()
