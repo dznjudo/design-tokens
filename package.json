@@ -1,6 +1,6 @@
 {
   "name": "av-design-tokens",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Design Tokens",
   "main": "src/",
   "files": [

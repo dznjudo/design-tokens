@@ -8,7 +8,10 @@ const StyleDictionary = require('style-dictionary').extend({
       files: [{
         destination: 'variables.scss',
         format: 'scss/variables'
-      }]
+      }],
+      options: {
+        'outputReferences': true
+      }
     },
     css: {
       transformGroup: 'css',
@@ -29,8 +32,10 @@ const StyleDictionary = require('style-dictionary').extend({
         format: 'json/nested'
       }],
       options: {
-        showFileHeader: false
-      }
+        showFileHeader: false,
+        outputReferences: true
+      },
+      
     },
     web: {
       transformGroup: 'js',
@@ -40,7 +45,8 @@ const StyleDictionary = require('style-dictionary').extend({
         format: 'javascript/module'
       }],
       options: {
-        showFileHeader: false
+        showFileHeader: false,
+        outputReferences: true
       }
     }
   }
