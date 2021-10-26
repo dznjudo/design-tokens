@@ -8,8 +8,8 @@
     "properties"
   ],
   "scripts": {
-    "build": "node ./build.js",
-    "clean": "rm -rf src/build",
+    "build": "npm run clean && node ./build.js && ./postbuild.sh",
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tyler Mathes",
