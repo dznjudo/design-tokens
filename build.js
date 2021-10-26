@@ -3,17 +3,20 @@ const StyleDictionary = require('style-dictionary').extend({
   platforms: {
     scss: {
       transformGroup: 'scss',
-      buildPath: 'dist/scss/',
+      buildPath: 'src/build/scss/',
       files: [
         {
           destination: 'variables.scss',
           format: 'scss/variables',
         },
       ],
+      options: {
+        outputReferences: true,
+      },
     },
     css: {
       transformGroup: 'css',
-      buildPath: 'dist/css/',
+      buildPath: 'src/build/css/',
       files: [
         {
           destination: 'variables.css',
@@ -26,7 +29,7 @@ const StyleDictionary = require('style-dictionary').extend({
     },
     web: {
       transformGroup: 'js',
-      buildPath: 'dist/json/',
+      buildPath: 'src/build/json/',
       files: [
         {
           destination: 'tokens.json',
@@ -35,11 +38,12 @@ const StyleDictionary = require('style-dictionary').extend({
       ],
       options: {
         showFileHeader: false,
+        outputReferences: true,
       },
     },
     web: {
       transformGroup: 'js',
-      buildPath: 'dist/js/',
+      buildPath: 'src/build/js/',
       files: [
         {
           destination: 'tokens.js',
@@ -48,6 +52,7 @@ const StyleDictionary = require('style-dictionary').extend({
       ],
       options: {
         showFileHeader: false,
+        outputReferences: true,
       },
     },
   },
